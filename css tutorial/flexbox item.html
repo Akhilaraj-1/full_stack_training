@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            .parent{
+                display: flex;
+                flex-direction: row;
+            }
+            h1,h2,h3{
+                width: 100px;
+                border: 2px solid red;
+            }
+            .website-layout-wrapper{
+                height:700px;
+                width: 100%;
+                background-color: cyan;
+                display: flex;
+                flex-direction: column;
+            }
+            .header{
+                display: flex;
+                flex-direction: row;
+                height: 50px;
+                background-color: gray;
+                justify-content: space-between;
+            }
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: center; 
+                align-items: center;
+            }
+            ul > li{
+                padding: 10px;
+                color:#fff;
+                font-size: 20px;
+                font-weight:600 ;
+                border-bottom: 2px solid red;
+            }
+            .main-area{
+                height: 700px;
+                background-color: blanchedalmond;
+                display: flex;
+                flex-direction: row;
+            }
+            .left-sidenav{
+                background-color: yellow;
+                height: 400px;
+                flex-grow: 1;
+            }
+            .main-content{
+                background-color: green;
+                height: 400px;
+                flex-grow: 1;
+            }
+            .right-nav{
+                background-color: pink;
+                height: 400px;
+                flex-grow: 1;
+            }
+            .footer-area{
+                display: flex;
+                background-color: #bbd;
+                height:70px ;
+                padding: 2px;
+                justify-content: center;
+                flex-grow: 1;
+            }
+        </style>
+        <title>
+            Flexbox item demo
+        </title>
+    </head>
+    <body>
+      <div class="website-layout-wrapper">
+            <nav class="header">
+                 <img class="logo" src="https://www.ramshyam.in/wp-content/uploads/2022/01/lord-ganesha.jpg"/>
+                <ul style="display: flex;">
+                  <li>Home</li>
+                  <li>About us</li>
+                  <li>Contact us</li>
+                </ul> 
+            </nav>
+            <div class="main-area">
+               <div class="left-sidenav">Left side Nav</div>
+               <div class="main-content">Main content</div>
+                <div class="right-nav">Right Nav</div>
+            </div>
+            <div class="footer-area">
+                <footer>
+                    @copywrite
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
